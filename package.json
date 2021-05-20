@@ -1,11 +1,12 @@
 {
-  "name": "hacker-news-clone",
+  "name": "techblogdb",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "seeds": "node seeds/index.js"
+    "seeds": "node seeds/index.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,14 @@
     "inquirer": "^8.0.0",
     "mysql2": "^2.2.5",
     "sequelize": "^5.22.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttheis1611/CMSstyleWK14.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ttheis1611/CMSstyleWK14/issues"
+  },
+  "homepage": "https://github.com/ttheis1611/CMSstyleWK14#readme"
 }
