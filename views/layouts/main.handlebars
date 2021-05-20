@@ -43,7 +43,7 @@
 <head>
     <meta charset="utf-8">
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="../stylesheets/main.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
 
 </head>
 
@@ -54,7 +54,7 @@
             <li>
                 <p><a class="link" href="/">Home</a></p>
             </li>
-           {{#if loggedIn}}
+            {{#if loggedIn}}
             <li>
                 <p><a class="link" href="../dashboard">Dashboard</a></p>
             </li>
@@ -70,12 +70,17 @@
         </ul>
         <h1 id="nav-header">The Tech Blog</h1>
     </nav>
-    {{{body}}}
+    <main>
+      {{{ body }}}
+    </main>
+
+    <footer>
+      Thanks for visiting!
+    </footer>
 
 </body>
-{{!--
-<script src="/js/nav.js"></script> --}}
-<script src="/javascript/logout.js"></script>
-<script src="/javascript/home.js"></script>
+{{!--<script src="/js/nav.js"></script> --}}
+<script src="/public/javascript/logout.js"></script>
+{{!-- <script src="/javascript/home.js"></script> --}}
 
 </html>
