@@ -1,6 +1,15 @@
 <h1 class="padding-20">Dashboard of Posts</h1>
-<p><a class="new-post" id="post">New Post</a></p>
-{{#each posts as |post| }}
-{{!-- Pass in the data to each individual post --}}
-{{> post-info post}}
-{{/each}}
+<a href="/create-post" class="new-post" ><button id="create-post">Create New Post</button></a>
+
+{{#if posts.length}}
+
+    {{!-- List the users posts --}}
+    {{#each posts as |post| }}
+        {{> post-info post}}
+    {{/each}}
+
+{{else}}
+    <div class="center-message">
+        <h5>There are no posts to display!</h5>
+    </div>
+{{/if}}

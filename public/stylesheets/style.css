@@ -51,6 +51,10 @@ button:hover {
   padding: 0px;
 }
 
+.center-message {
+  text-align: center;
+}
+
 #navbar {
   list-style-type: none;
   padding: 20px;
@@ -184,17 +188,32 @@ main {
 }
 
 .post {
-  border: 6px solid #231010;
-  padding: 20px;
-  margin: 10px;
+  border: 3px solid #231010;
+  border-radius: 3px;
+  padding: 0px;
+  margin: 0px;
   margin-bottom: 2%;
   line-height: 150%;
 }
 
-.post .title span {
+.meta {
+  font-size: large;
+  padding: 10px 0px 10px 50px;
+}
+
+.post span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: #231010;
+}
+
+.title {
+  background-color: #231010;
+  margin: 0px;
+  padding: 10px 0px 10px 50px;
+  font-size: larger;
+  font-weight: 700;
+  color: #dad2d2;
 }
 
 .edit-link {
