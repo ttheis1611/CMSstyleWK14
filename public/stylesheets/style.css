@@ -43,6 +43,14 @@ button:hover {
   color: #d9ead3;
   padding: 15px;
 }
+
+.new-post:hover {
+  text-decoration: none;
+  color: #3486eb;
+  cursor: pointer;
+  padding: 0px;
+}
+
 #navbar {
   list-style-type: none;
   padding: 20px;
