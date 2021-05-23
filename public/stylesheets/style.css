@@ -24,7 +24,7 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #515551;
   border: 0;
   padding: 1%;
   color: white;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #232523;
 }
 
 .link {
@@ -80,9 +80,8 @@ button:hover {
   box-shadow: 6px 6px 2px 1px rgba(140, 140, 143, 0.3);
   padding: 11px;
 }
-/* Post card styling */
+
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 20px;
@@ -164,7 +163,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #d9ead3;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -204,12 +203,12 @@ main {
 }
 
 .upvote-btn {
-  background-color: #197d0f;
+  background-color: #515551;
   transition: background-color .1s;
 }
 
 .upvote-btn:hover {
-  background-color: #1f9c13;
+  background-color: #232523;
 }
 
 .comment-form {
