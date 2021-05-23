@@ -1,6 +1,6 @@
-<h1 class="padding-20">My Posts</h1>
-<p><a class="link" href="/post">New Post</a></p>
-{{#each posts as |aPost| }}
+<h1 class="padding-20">Dashboard of Posts</h1>
+<p><a class="new-post" id="post">New Post</a></p>
+{{#each posts as |post| }}
 {{!-- Pass in the data to each individual post --}}
-{{> post aPost}}
+{{> post-info post}}
 {{/each}}
