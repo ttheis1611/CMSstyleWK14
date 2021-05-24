@@ -8,11 +8,12 @@ router.get('/', (req, res) => {
   Post.findAll({
     attributes: [
       'id',
-      'post_text',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      'post_text'
+      // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
+    order: [['created_at', 'DESC']],
     include: [
       {
         model: Comment,
@@ -42,10 +43,10 @@ router.get('/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'post_text',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      'post_text'
+      // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
       {
@@ -76,7 +77,9 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  console.log("test");
   if (req.session) {
+    console.log(req.session.user_id);
     Post.create({
       title: req.body.title,
       post_text: req.body.post_text,
@@ -103,9 +106,11 @@ router.put('/upvote', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
+  
   Post.update(
     {
-      title: req.body.title
+      title: req.body.title,
+      post_text: req.body.post_text
     },
     {
       where: {
@@ -115,6 +120,7 @@ router.put('/:id', (req, res) => {
   )
     .then(dbPostData => {
       if (!dbPostData) {
+        console.log(req.session.id);
         res.status(404).json({ message: 'No post found with this id' });
         return;
       }

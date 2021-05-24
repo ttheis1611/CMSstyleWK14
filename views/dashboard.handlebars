@@ -1,15 +1,18 @@
-<h1 class="padding-20">Dashboard of Posts</h1>
-<a href="/create-post" class="new-post" ><button id="create-post">Create New Post</button></a>
+<div>
+    <h1 class="padding-20">Dashboard of Posts</h1>
+    <a href="/dashboard/create/" class="new-post"><button id="create-post">Create New Post</button></a>
 
-{{#if posts.length}}
-
+    {{#if posts.length}}
     {{!-- List the users posts --}}
     {{#each posts as |post| }}
-        {{> post-info post}}
-    {{/each}}
+    {{> post-info post}}
+
+    <a href="/dashboard/edit/{{post.id}}"><button class="upvote-btn">edit post</button></a>
+</div>
+{{/each}}
 
 {{else}}
-    <div class="center-message">
-        <h5>There are no posts to display!</h5>
-    </div>
+<div class="center-message">
+    <h5>There are no posts to display!</h5>
+</div>
 {{/if}}

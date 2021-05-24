@@ -52,7 +52,10 @@ button:hover {
 }
 
 .center-message {
-  text-align: center;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
 }
 
 #navbar {
@@ -201,6 +204,12 @@ main {
   padding: 10px 0px 10px 50px;
 }
 
+.count {
+  font-size: medium;
+  text-align: right;
+  padding: 10px 30px 5px 0px;
+}
+
 .post span {
   font-style: italic;
   font-size: 90%;
@@ -210,7 +219,7 @@ main {
 .title {
   background-color: #231010;
   margin: 0px;
-  padding: 10px 0px 10px 50px;
+  padding: 10px 10px 0px 50px;
   font-size: larger;
   font-weight: 700;
   color: #dad2d2;
@@ -256,6 +265,17 @@ main {
   width: 300px;
 }
 
+.title-input  {
+ margin-top: 0px;
+ width: 500px;
+ height: 90px;
+}
+
+.post-textarea {
+  width: 500px;
+  height: 90px;
+ }
+
 .edit-post-form {
   margin-bottom: 5%;
 }
@@ -264,7 +284,7 @@ footer {
   border-top: 1px solid #ccc;
   display: flex;
   justify-content: center;
-  padding: 1%;
+  padding: 2%;
   font-size: 110%;
 }
 

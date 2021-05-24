@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
 </head>
 
@@ -17,7 +17,7 @@
             </li>
             {{#if loggedIn}}
             <li>
-                <p><a class="link" href="../dashboard">Dashboard</a></p>
+                <p><a class="link" href="/dashboard">Dashboard</a></p>
             </li>
             <li>
                 <p><button id="logout" class="btn-no-style">Logout</button> </p>
@@ -35,13 +35,20 @@
     <main>
       {{{ body }}}
     </main>
+    
+{{#if loggedIn}}
+    <footer>
+      Thanks for signing in!
+    </footer>
 
+    
+  <script src="/javascript/logout.js"></script>
+  
+  {{else}}
     <footer>
       Thanks for visiting!
     </footer>
 
-    {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
   {{/if}}
 
 </body>
