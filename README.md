@@ -26,18 +26,18 @@ https://cmsstylewk14.herokuapp.com/
 NPM Handlebars, Express, Sequelize, Bcrypt, mysql, inquirer, Express-Session, Express-Handlebars 
   
 ### Screenshots
+Homepage Login with Dashboard button
 ![Techblog](/images/Techblog.png)
-Homepage Login with Dashboard button 
 
-![Dashboard](/images/Dashboard.PNG)
 Dasboard 
-
-![editpost](/images/editpost.PNG)
+![Dashboard](/images/Dashboard.PNG)
+ 
 Editpost 
+![editpost](/images/editpost.PNG)
 
-
+Addcomment
 ![Addcomment](/images/Addcomment.PNG)
-Addcomment 
+ 
 
 
 ## Contributing
