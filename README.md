@@ -31,9 +31,9 @@ Homepage Login with Dashboard button
 
 Dasboard 
 ![Dashboard](/images/Dashboard.PNG)
- 
- 
 Edit & Delete post
+ 
+
 ![editpost](/images/editpost.PNG)
 
 
