@@ -28,11 +28,11 @@ NPM Handlebars, Express, Sequelize, Bcrypt, mysql, inquirer, Express-Session, Ex
 ### Screenshots
 ![Techblog](/images/Techblog.png)
 Homepage Login with Dashboard button 
-![Dashboard](/images/Dashboard.png)
+![Dashboard](/images/Dashboard.PNG)
 Dasboard 
-![editpost](/images/editpost.png)
+![editpost](/images/editpost.PNG)
 Editpost 
-![Addcomment](/images/Addcomment.png)
+![Addcomment](/images/Addcomment.PNG)
 Addcomment 
 
 
