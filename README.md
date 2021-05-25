@@ -35,6 +35,7 @@ Dasboard
 ![editpost](/images/editpost.PNG)
 Editpost 
 
+
 ![Addcomment](/images/Addcomment.PNG)
 Addcomment 
 
@@ -43,8 +44,9 @@ Addcomment
 Be kind to each other
   
 ## Credits
-* (Kelly Gowing)
-* (Hamza)
+* (Kelly Gowing) - thanks for all the help with troubleshooting
+* (Hamza) - thanks for all the guidance along the way. Kept me from pulling more hair out
+* (Priya Ravi) - absolutely great example of the project. 
 
   
 ## Questions
