@@ -32,10 +32,12 @@ Homepage Login with Dashboard button
 Dasboard 
 ![Dashboard](/images/Dashboard.PNG)
  
-Editpost 
+ 
+Edit & Delete post
 ![editpost](/images/editpost.PNG)
 
-Addcomment
+
+Add comments
 ![Addcomment](/images/Addcomment.PNG)
  
 
