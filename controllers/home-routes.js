@@ -89,29 +89,29 @@ router.get('/post/:id', (req, res) => {
 });
 
 //serve up the dashboard
-router.get("/dashboard", (req, res) => {
+router.get('/dashboard', (req, res) => {
   //we need to get all posts
-  console.log(req.session.user_id, " this is the session id");
+  console.log(req.session.user_id, "this is the session id");
   Post.findAll({
     where: {
       user_id: req.session.user_id,
     },
-    attributes: ["id", "title", "post_text", "user_id"],
+    attributes: ['id', 'title', 'post_text', 'user_id', 'created_at'],
     include: [
       {
         model: User,
-        as: "user",
-        attributes: ["username"],
+        as: 'user',
+        attributes: ['username'],
       },
       {
         model: Comment,
-        as: "comments",
-        attributes: ["id", "comment_text", "user_id"],
+        as: 'comments',
+        attributes: ['id', 'comment_text', 'user_id'],
         include: [
           {
             model: User,
-            as: "user",
-            attributes: ["username"],
+            as: 'user',
+            attributes: ['username'],
           },
         ],
       },
@@ -125,7 +125,7 @@ router.get("/dashboard", (req, res) => {
       }
       const posts = dbPostData.map((post) => post.get({ plain: true })); // serialize all the posts
       console.log(posts);
-      res.render("dashboard", { posts, loggedIn: req.session.loggedIn });
+      res.render('dashboard', { posts, loggedIn: req.session.loggedIn });
     })
     .catch((err) => {
       console.log(err);
