@@ -1,14 +1,16 @@
 <div>
     <h1 class="padding-20">Dashboard of Posts</h1>
-    <a href="/dashboard/create/" class="new-post"><button id="create-post">Create New Post</button></a>
+    <div style="float: right;">
+        <a href="/dashboard/create/" class="new-post"><button id="create-post">Create New Post</button></a> 
+    </div>
 
     {{#if posts.length}}
     {{!-- List the users posts --}}
     {{#each posts as |post| }}
-    {{> post-info post}}
-
     <a href="/dashboard/edit/{{post.id}}"><button class="upvote-btn">edit post</button></a>
+    {{> post-info post}} 
 </div>
+
 {{/each}}
 
 {{else}}
@@ -16,5 +18,3 @@
     <h5>There are no posts to display!</h5>
 </div>
 {{/if}}
-
-<script>console.log(`dashboard ${posts}`)</script>
